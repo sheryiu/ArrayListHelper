@@ -47,5 +47,5 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:24.2.0'
 }
 
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+apply from: 'https://raw.githubusercontent.com/sheryiu/ArrayListHelper/master/arraylisthelper/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/sheryiu/ArrayListHelper/master/arraylisthelper/bintrayv1.gradle'
