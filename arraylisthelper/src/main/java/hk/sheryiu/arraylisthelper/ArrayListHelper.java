@@ -21,12 +21,12 @@ public class ArrayListHelper<T> {
 		this(null, null);
 	}
 
-	protected void setDataSource(RecyclerView.Adapter adapter, ArrayList<T> source) {
+	public void setDataSource(RecyclerView.Adapter adapter, ArrayList<T> source) {
 		this.adapter = adapter;
 		this.source = source;
 	}
 
-	protected void updateDataSource(ArrayList<T> newsource) {
+	public void updateDataSource(ArrayList<T> newsource) {
 		// match new list with old list
 		int[] matchingPos = new int[newsource.size()];
 		int totalNew = 0;

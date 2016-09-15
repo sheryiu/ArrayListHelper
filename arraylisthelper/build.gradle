@@ -26,7 +26,7 @@ apply plugin: "com.jfrog.bintray"
     allLicenses = ["Apache-2.0"]
 }*/
 
-version = '1.0-beta.1'
+version = '1.0-beta.2'
 
 android {
     compileSdkVersion 24
@@ -36,7 +36,7 @@ android {
         minSdkVersion 15
         targetSdkVersion 24
         versionCode 1
-        versionName "1.0-beta.1"
+        versionName "1.0-beta.2"
 
     }
     buildTypes {
@@ -129,9 +129,9 @@ bintray {
         licenses = ["Apache-2.0"]
         publish = true
         version {
-            name = '1.0-beta.1'
+            name = '1.0-beta.2'
             released = new Date()
-            vcsTag = '1.0-beta.1'
+            vcsTag = '1.0-beta.2'
         }
     }
 }
