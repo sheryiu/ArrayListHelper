@@ -2,31 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: "com.jfrog.bintray"
 
-/*ext {
-    bintrayRepo = 'ArrayListHelper'
-    bintrayName = 'ArrayListHelper'
-
-    publishedGroupId = 'hk.sheryiu.arraylisthelper'
-    libraryName = 'ArrayListHelper'
-    artifact = 'ArrayListHelper'
-
-    libraryDescription = 'Test'
-
-    siteUrl = 'https://github.com/sheryiu/ArrayListHelper'
-    gitUrl = 'https://github.com/sheryiu/ArrayListHelper.git'
-
-    libraryVersion = '1.0-beta.1'
-
-    developerId = 'sheryiu'
-    developerName = 'Yiu Cheuk Lok'
-    developerEmail = 'yiu.cheuk.lok@gmail.com'
-
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-}*/
-
-version = '1.0-beta.2'
+version = '1.0-beta-3'
 
 android {
     compileSdkVersion 24
@@ -35,8 +11,8 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 24
-        versionCode 1
-        versionName "1.0-beta.2"
+        versionCode 3
+        versionName "1.0-beta-3"
 
     }
     buildTypes {
@@ -121,17 +97,15 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"
-        // it is the name that appears in bintray when logged
-        //name = "hk.sheryiu.arraylisthelper:arraylisthelper" // TODO
         name = 'ArrayListHelper'
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
         publish = true
         version {
-            name = '1.0-beta.2'
+            name = '1.0-beta-3'
             released = new Date()
-            vcsTag = '1.0-beta.2'
+            vcsTag = '1.0-beta-3'
         }
     }
 }
